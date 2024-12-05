@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+body {
+    height: 100vh;
+    background: #bbb;
+
+
+}
+
+header {
+    height: 20%;
+    background-image: url(https://images.pexels.com/photos/7566201/pexels-photo-7566201.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    & div {
+        display: flex;
+        gap: 1.5rem
+    }
+
+}
+
+
+a {
+
+    font-size: 1.3em;
+    color: #000000;
+    text-decoration: none;
+    text-shadow: 0 0 3px #ffffff;
+
+    height: 50px;
+    width: 200px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+    background: url(https://th.bing.com/th/id/OIP.VR4ZsT67LGWAB0lpLaWBngHaE8?w=273&h=183&c=7&r=0&o=5&dpr=1.1&pid=1.7);
+    background-position: center;
+    background-size: cover;
+
+    &:hover {
+        box-shadow: 0 0 5px #fff;
+    }
+}
+
+input {
+    border-radius: 15px;
+    border: none;
+    outline-offset: 3px;
+    outline: 2px solid #ffffff;
+    font-size: 1.2em;
+    width: 200px;
+    transition: width 1s ease-in-out;
+    background: url(https://media.istockphoto.com/id/481345052/pt/foto/thamnophis-padr%C3%B5es-sem-costura-com-efeito-m%C3%A1rmore-preto-e-branco.webp?a=1&b=1&s=612x612&w=0&k=20&c=GDpWMXE7ukv-3eogaxLXrRZKJeQxfMPARblf42unUY0=);
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    text-shadow: 3px 3px 5px #000000;
+
+    &::placeholder {
+        color: #ffffff;
+        text-shadow: 1px 1px 10px #000000;
+        font-style: italic;
+    }
+}
+
+.Principal {
+
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 0;
+    background: rgba(0, 0, 0, 0.9);
+    transition: .3s ease-out;
+
+    & span {
+        position: relative;
+        float: right;
+        font-size: 3em;
+        color: #aaa;
+        margin: 1rem;
+
+        &:hover {
+            color: red;
+            cursor: pointer;
+        }
+    }
+
+
+}
+blockquote{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    color:#fff;
+    margin: 2rem;
+    width:350px;
+    text-align: justify;
+    line-height: 1.25;
+    & img{
+        width:100%;
+        height:100%;
+        margin-bottom: 1rem;
+    }
+}
+
+
+.modal {
+    
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    ;
+    background: rgba(0, 0, 0, 0.8);
+    
+    
+    display: none;
+
+}
+
+
+.modal img {
+    width: 50%;
+    height: 50%;
+}
+
+legend {
+    font-size: 1.5em;
+    color: #aaa;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+i {
+    color: #fff;
+    font-size: 5em;
+    transform: translate(600px, 0);
+}
+
+i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.vrt{
+    position: absolute;
+    top:25%;
+    right:25%;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 5px rgb(253, 252, 253);
+    font-size: 2em;
+    
+}
+
+
+
+
+
+
+
+img {
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        filter: brightness(125%)
+    }
+}
+
+
+
+.grid-image {
+    background-image: url(https://media.istockphoto.com/id/481345052/pt/foto/thamnophis-padr%C3%B5es-sem-costura-com-efeito-m%C3%A1rmore-preto-e-branco.webp?a=1&b=1&s=612x612&w=0&k=20&c=GDpWMXE7ukv-3eogaxLXrRZKJeQxfMPARblf42unUY0=);
+    width: 80%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "a b c"
+        "d e f"
+    ;
+    padding: 20px;
+    margin: 3rem auto;
+    border-radius: 10px;
+
+
+
+}
+
+.link1 {
+    grid-area: a;
+}
+
+.link2 {
+    grid-area: b;
+}
+
+.link3 {
+    grid-area: c;
+}
+
+.link4 {
+    grid-area: d;
+}
+
+.link5 {
+    grid-area: e;
+}
+
+.link6 {
+    grid-area: f;
+}
+
+.group-button {
+    display: flex;
+
+    flex-wrap: wrap;
+    width: 95%;
+    margin: auto;
+}
+
+button {
+    width: 50%;
+
+    height: 4rem;
+    background: url(https://images.pexels.com/photos/7566201/pexels-photo-7566201.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6px;
+    color: #000000;
+    cursor: pointer;
+
+    &:hover {
+        color: #fff
+    }
+
+}
+
+.text {
+    border: 1px solid black;
+    line-height: 1.25;
+    width: 50%;
+    padding: 10px;
+    text-align: justify;
+    background: #ccc;
+    font-weight: bold
+}
+
+
+
+
+
+
+
+/* img{
+    height: 200px;
+    width:250px;
+    margin: 2rem 3rem;
+    cursor: pointer;
+    border-radius: 10px;
+    
+} */
+
+
+
+
+/* RESPONSIVIDADE */
+
+/* Media query para dispositivos com largura máxima de 768px (tablets e celulares) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Media query para dispositivos com largura máxima de 480px (celulares) */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+}
