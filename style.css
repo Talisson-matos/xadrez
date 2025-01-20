@@ -11,8 +11,6 @@
 body {
     height: 100vh;
     background: #bbb;
-
-
 }
 
 header {
@@ -39,7 +37,6 @@ a {
     color: #000000;
     text-decoration: none;
     text-shadow: 0 0 3px #ffffff;
-
     height: 50px;
     width: 200px;
     border-radius: 15px;
@@ -77,49 +74,66 @@ input {
     }
 }
 
-.Principal {
 
+
+.Principal {
     position: fixed;
-    z-index: 1;
     height: 100%;
+    z-index: 1;
     width: 0;
     background: rgba(0, 0, 0, 0.9);
-    transition: .3s ease-out;
-
-    & span {
-        position: relative;
-        float: right;
-        font-size: 3em;
-        color: #aaa;
-        margin: 1rem;
-
-        &:hover {
-            color: red;
-            cursor: pointer;
-        }
-    }
-
-
+    transition: .2s linear;
 }
-blockquote{
+
+.Principal span {
+    position: relative;
+    top: -60px;
+    left: 10%;
+    float: right;
+    font-size: 3em;
+    color: #aaa;
+    margin: 1rem;
+}
+
+.Principal span:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.abc{  
+    
+width:300px;
+margin: auto;
+  
+}
+
+
+
+.text-information{
+    width: 300px;
+   color: red;
+}
+
+blockquote {
     display: none;
     position: fixed;
     z-index: 1;
-    color:#fff;
+    color: #fff;
     margin: 2rem;
-    width:350px;
+    width: 350px;
     text-align: justify;
     line-height: 1.25;
-    & img{
-        width:100%;
-        height:100%;
+
+    & img {
+        width: 100%;
+        height: 100%;
         margin-bottom: 1rem;
     }
 }
 
 
 .modal {
-    
+
     height: 100%;
     width: 100%;
     position: fixed;
@@ -127,10 +141,7 @@ blockquote{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    ;
     background: rgba(0, 0, 0, 0.8);
-    
-    
     display: none;
 
 }
@@ -159,14 +170,14 @@ i:hover {
     cursor: pointer;
 }
 
-.vrt{
+.vrt {
     position: absolute;
-    top:25%;
-    right:25%;
+    top: 25%;
+    right: 25%;
     color: rgb(0, 0, 0);
     text-shadow: 0 0 5px rgb(253, 252, 253);
     font-size: 2em;
-    
+
 }
 
 
@@ -231,49 +242,29 @@ img {
     grid-area: f;
 }
 
-.group-button {
-    display: flex;
 
+
+section {
+    display: flex;
     flex-wrap: wrap;
-    width: 95%;
-    margin: auto;
+    height: fit-content;
+    width: 90%;
+    margin: 1rem auto;
+    border: 4px solid #777;
+    padding: 1rem;
 }
 
-button {
+section div {
     width: 50%;
-
-    height: 4rem;
-    background: url(https://images.pexels.com/photos/7566201/pexels-photo-7566201.jpeg?auto=compress&cs=tinysrgb&w=600);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-size: 1.5em;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-around;
-    padding-top: 6px;
-    color: #000000;
-    cursor: pointer;
-
-    &:hover {
-        color: #fff
-    }
-
 }
 
-.text {
-    border: 1px solid black;
-    line-height: 1.25;
-    width: 50%;
-    padding: 10px;
-    text-align: justify;
-    background: #ccc;
-    font-weight: bold
+section button,
+p {
+    width: 100%;
 }
 
 
-
-
+/* ''https://images.pexels.com/photos/7566201/pexels-photo-7566201.jpeg?auto=compress&cs=tinysrgb&w=600'' */
 
 
 
@@ -285,22 +276,3 @@ button {
     border-radius: 10px;
     
 } */
-
-
-
-
-/* RESPONSIVIDADE */
-
-/* Media query para dispositivos com largura máxima de 768px (tablets e celulares) */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-/* Media query para dispositivos com largura máxima de 480px (celulares) */
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-}
